@@ -71,6 +71,16 @@ plugins:
   #     tags_file: tags.md
   - search:
       lang: en
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+      htmlmin_opts:
+          remove_comments: true
+      js_files:
+          - js/main.js
+      css_files:
+          - stylesheets/extra.css
   # - social:
   #     cards_color:
   #       fill: "#0FF1CE" 
@@ -108,4 +118,3 @@ markdown_extensions:
       anchor_linenums: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-
